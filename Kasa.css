@@ -1,0 +1,103 @@
+/* Resetowanie marginesów i paddingów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: left; /* Tekst w nagłówku jest wyrównany do prawej */
+    margin-left: 132px; /* Dodatkowy odstęp z prawej strony */
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin-top: 20px; /* Dodatkowy odstęp u góry */
+    font-size: 36px; /* Rozmiar czcionki */
+    color: #333; /* Kolor tekstu */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.navbar {
+    background-color: #ffffff !important; /*tutaj pasek na gorze*/
+    height: 70px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+    height: 60px;
+    margin-left: 11px;
+    padding-top: 10px;/*tu przesuwasz logo
+}
+
+.navbar-brand {
+    padding-bottom: 5px; /* Przesuń logo w lewo o 20 pikseli */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Kolor ikony przycisku hamburgera */
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end; /* Wycentrowanie elementów na końcu paska nawigacyjnego */
+}
+
+
+/* Styl dla całego formularza */
+form {
+    width: 80%; /* Szerokość formularza */
+    margin: 0 auto; /* Wyśrodkowanie formularza */
+    margin-bottom: 60px;
+}
+
+/* Styl dla kontenera grupującego pola formularza */
+fieldset {
+    border: 1px solid #ccc; /* Obramowanie pola formularza */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    margin-bottom: 20px; /* Odstęp między polami */
+    padding: 20px; /* Wewnętrzny odstęp */
+}
+
+/* Styl dla legendy grupy formularza */
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styl dla etykiet formularza */
+label {
+    display: block; /* Etykieta na nowej linii */
+    margin-bottom: 5px; /* Odstęp między etykietami */
+}
+
+/* Styl dla pól formularza */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Szerokość równa szerokości formularza */
+    padding: 10px; /* Wewnętrzny odstęp */
+    margin-bottom: 10px; /* Odstęp między polami */
+    border: 1px solid #ccc; /* Obramowanie pola */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+}
+
+/* Styl dla przycisku formularza */
+button[type="submit"] {
+    padding: 10px 20px; /* Wewnętrzny odstęp */
+    border: none; /* Usunięcie obramowania */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    background-color: #e55e18; /* Kolor tła */
+    color: #fff; /* Kolor tekstu */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    transition: background-color 0.3s ease; /* Animacja zmiany koloru tła */
+}
+
+/* Styl dla przycisku formularza po najechaniu myszką */
+button[type="submit"]:hover {
+    background-color: #ac3a01; /* Kolor tła po najechaniu myszką */
+}

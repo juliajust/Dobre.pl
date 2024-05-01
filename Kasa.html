@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podstrona z kasą</title>
+    <link rel="stylesheet" href="Kasa.css"> <!-- Zaimportuj swoje style CSS -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="burger_i_napis_na_bialym.png" alt="Logo" height="30">
+            </a>
+        </div>
+    </nav>
+    <header>
+        <!-- Tutaj umieść nagłówek -->
+        <h1>Kasa</h1>
+    </header>
+
+    <main>
+        <form action="/place-order" method="POST">
+            <fieldset>
+                <legend>Dane osobowe i adres dostawy</legend>
+                <div>
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="surname">Nazwisko:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div>
+                    <label for="email">Adres e-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="address">Adres dostawy:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div>
+                    <label for="phone">Telefon kontaktowy:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Metoda płatności</legend>
+                <div>
+                    <input type="radio" id="payment-card" name="payment" value="card" required>
+                    <label for="payment-card">Karta płatnicza</label>
+                </div>
+                <div>
+                    <input type="radio" id="payment-cash" name="payment" value="cash" required>
+                    <label for="payment-cash">Płatność gotówką przy odbiorze</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Zamów</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Tutaj możesz umieścić stopkę -->
+    </footer>
+</body>
+</html>

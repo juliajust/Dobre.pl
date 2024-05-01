@@ -1,0 +1,322 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background colors */
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Header styles */
+header {
+    background-color: #e55e18;
+    color: #fff;
+    padding: 15px;
+}
+
+.logo img {
+    height: 50px;
+    width: 140px;
+    margin-left: -60px; /* Usunięcie negatywnego marginesu */
+
+}
+
+/* Main content styles */
+.main-content {
+    color: #1f1f1f;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    margin-left: 60px;
+    max-width: 80%;
+    margin-right: 100px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background-image: url('ostatnie2.png');
+    background-size: cover auto;
+    background-position: center;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat; /* Zapobieganie powtarzaniu tła */
+}
+
+
+.container {
+    max-width: calc(100% - 40px);
+    margin: 20px auto; /* Zmiana marginesu */
+}
+
+/* Form styles */
+form {
+    margin-top: 20px; /* Poprawa odstępu od poprzedniego elementu */
+}
+
+/* Custom image styles */
+.img-custom {
+    width: 70px;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+}
+
+.row {
+    text-align: left;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff !important;
+    height: 70px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin-left: -40px;
+}
+
+.navbar-nav .nav-link {
+    color: #e55e18 !important;
+    margin-right: -90px;
+    
+}
+
+.navbar-toggler {
+    border-color: #e55e18 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c45219 !important;
+}
+.navbar-nav .nav-item {
+    margin-left: 0px; /* Przesunięcie elementów w prawo */
+    padding-right: 110px;
+}
+
+
+.main-content h1.display-4 {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: cover;
+    
+}
+
+.main-content h2.lead {
+    font-size: 1.5em;
+    padding-bottom: cover;
+}
+
+.container .col-md-4 h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 0; /* Usunięcie dodatkowego marginesu */
+    display: flex;
+    align-items: center;
+}
+
+.container .col-md-4 p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.col-md-4 h2 i {
+    margin-right: 10px;
+    color: #e55e18;
+}
+
+
+.col-md-4 h2 {
+    display: flex;
+    align-items: center;
+    padding-top: cover;
+}
+
+
+/* Media queries */
+@media (max-width: 1200px) {
+    .main-content {
+        padding-top: 50px; /* Dostosowanie wartości paddingu */
+        padding-bottom: 50px; /* Dostosowanie wartości paddingu */
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-content {
+        background-size: contain; /* Zmniejszenie rozmiaru obrazu do dopasowania */
+        background-position: right; /* Przesunięcie obrazu w górę */
+    }
+}
+/* Dodatkowe style dla nagłówków z ikonkami */
+/* Dodatkowe style dla nagłówków z ikonkami */
+.icon-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie nagłówka */
+    margin: 0 auto; /* Automatyczne wyśrodkowanie */
+}
+
+.icon-heading i {
+    margin-bottom: 10px; /* Dodanie odstępu między ikonką a tekstem */
+}
+
+/* Dodatkowe style dla zawężenia pola tekstu pod nagłówkami */
+.container .col-md-4 .content-wrapper h2 {
+    font-size: 23px; /* Zmiana rozmiaru czcionki */
+    color: #333; /* Zmiana koloru tekstu */
+    margin-bottom: 15px; /* Dodanie odstępu na dole */
+    margin-top: -40px;
+}
+.container .col-md-4 .content-wrapper {
+    max-width: 350px; /* Ustaw maksymalną szerokość obszaru z tekstem */
+    margin: 0 auto; /* Automatyczne wyśrodkowanie */
+    padding: 15px; /* Dodaj wypełnienie */
+}
+
+.container .col-md-4 .content-wrapper p {
+    font-size: 16px; /* Zmiana rozmiaru czcionki */
+    color: #666; /* Zmiana koloru tekstu */
+    margin-bottom: 15px; /* Dodanie większego odstępu na dole */
+}
+
+
+.background-image-section {
+    position: relative; /* Dodajemy pozycję względną, aby można było umieścić zdjęcie wewnątrz */
+    overflow: hidden; /* Zapobiega wyjściu poza kontener */
+    width: 100%; /* Szerokość kontenera */
+    height: 500px; /* Wysokość kontenera */
+}
+
+.background-image-section img {
+    position: absolute; /* Pozycja absolutna względem rodzica */
+    top: 0;
+    left: 0;
+    width: 100%; /* Szerokość obrazu */
+    height: auto; /* Wysokość obrazu */
+    object-fit: cover; /* Zachowuje proporcje obrazu i wypełnia element */
+}
+.btn-custom {
+    background-color: #e55e18; /* Twój własny kolor tła */
+    border-color: #e55e18; /* Kolor obramowania */
+    color: #ffffff; /* Kolor tekstu */
+}
+
+.btn-custom:hover {
+    background-color: #d65311; /* Twój własny kolor tła po najechaniu myszką */
+    border-color: #e55e18; /* Kolor obramowania po najechaniu myszką */
+    color: #ffffff; /* Kolor tekstu po najechaniu myszką */
+}
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.header-box {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    margin: -70px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 15px; /* Dodana zaokrąglenie krawędzi */
+    margin-bottom: 0; /* Usunięcie przerwy między elementami */
+}
+
+.header-box h3 {
+    font-weight: bold;
+    margin-bottom: 10px; /* Dodatkowy margines dla nagłówka */
+}
+
+.header-box p {
+    margin: 5px 0;
+    
+}
+
+.header-box .icon {
+    margin-bottom: 10px;
+    color: #e55e18;
+}
+.icon-heading i {
+    font-size: 40px; /* Zwiększenie rozmiaru ikonki */
+    margin-bottom: 10px; /* Dodanie odstępu między ikonką a tekstem */
+}
+
+/* Dodatkowe style dla sekcji nagłówków */
+.jak-zamawiac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px; /* Ustawienie wysokości na całą wysokość widoku */
+    font-weight: bold;
+    padding-bottom: -50px;
+}
+
+.jak-zamawiac h3 {
+    font-size: 40px; /* Zwiększenie rozmiaru czcionki */
+    color: #e55e18; /* Kolor tekstu (możesz zmienić na dowolny) */
+    font-weight: bold;
+    padding-top: -30px;
+}
+footer {
+    background-color: #ffffff; /* Kolor tła stopki */
+    color: #1f1f1f; /* Kolor tekstu */
+    padding: 20px 0; /* Wewnętrzne odstępy stopki */
+    text-align: center; /* Wyśrodkowanie tekstu i elementów stopki */
+}
+
+
+.social-icons {
+    margin-top: 10px; /* Odstęp między napisem a ikonkami */
+}
+
+.social-icons a {
+    color: #0f0f0f; /* Kolor ikonek */
+    font-size: 30px; /* Rozmiar ikonek */
+    margin: 0 15px; /* Odstęp między ikonkami */
+}
+
+.logo2 {
+    max-height: 120px; /* Zwiększ maksymalną wysokość */
+    width: auto; /* Ustaw szerokość na auto, aby zachować proporcje */
+    margin: 0 auto 20px; /* Wycentruj logo i dodaj odstęp od innych elementów */
+}
+
+
+.social-icons a:hover {
+    color: #e55e18; /* Kolor ikonek po najechaniu myszką */
+}
+
+.footer-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+/* Styl dla zaokrąglonego inputa */
+.form-control {
+    border-radius: 20px; /* Zaokrąglony kształt */
+}
+
+/* Styl dla zaokrąglonego przycisku */
+.btn-custom {
+    border-radius: 20px; /* Zaokrąglony kształt */
+}

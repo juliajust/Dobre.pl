@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podstrona</title>
+    <link rel="stylesheet" href="Restauracje.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="burger_i_napis_na_bialym.png" alt="Logo" height="30">
+            </a>
+        
+    
+    <main>
+        <div class="categories">
+            <a href="pizza.html" style="background-image: url(pizza.png);">
+                <span class="category-name">Pizza</span>
+            </a>
+            <a href="makarony.html" style="background-image: url(makaron.png);">
+                <span class="category-name">Makarony</span>
+            </a>
+            <a href="sushi.html" style="background-image: url(sushi.png);">
+                <span class="category-name">Sushi</span>
+            </a>
+            <a href="indyjskie.html" style="background-image: url(indyjska.png);">
+                <span class="category-name">Kuchnia Indyjska</span>
+            </a>
+            <a href="grecka.html" style="background-image: url(grecka.png);">
+                <span class="category-name">Kuchnia Grecka</span>
+            </a>
+            <a href="wloska.html" style="background-image: url(wloska.png);">
+                <span class="category-name">Kuchnia Włoska</span>
+            </a>
+            <a href="burgery.html" style="background-image: url(burger.png);">
+                <span class="category-name">Burgery</span>
+            </a>
+        </div>
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Restauracje i dania" class="form-control">
+                <button type="submit" class="btn btn-search"></i>Szukaj</button>
+                <div class="sort-options">
+                    <span class="sort-text">Sortuj:</span>
+                    <select class="form-control">
+                        <option value="oceny">Oceny</option>
+                        <option value="odleglosci">Odległość</option>
+                        <option value="ceny">Ceny</option>
+                    </select>
+                </div>
+                
+            </form>
+        </div>
+        <div class="filters">
+            <div class="filter-option">
+                <input type="checkbox" id="open-now">
+                <label for="open-now">Otwarte teraz</label>
+            </div>
+            <div class="filter-option">
+                <input type="checkbox" id="free-delivery">
+                <label for="free-delivery">Bezpłatna dostawa</label>
+            </div>
+            <div class="filter-option">
+                <label for="ratings">Oceny:</label>
+                <div class="star-rating" id="ratings">
+                    <span class="star" data-rating="1">★</span>
+                    <span class="star" data-rating="2">★</span>
+                    <span class="star" data-rating="3">★</span>
+                    <span class="star" data-rating="4">★</span>
+                    <span class="star" data-rating="5">★</span>
+                </div>
+            </div>
+        </div>
+       
+    
+        <div class="restaurant-list">
+            <div class="restaurant">
+                <img src="akira.png" alt="Restauracja 1" class="restaurant-image">
+                <span class="restaurant-name">Akira Sushi</span>
+            </div>
+            <div class="restaurant">
+                <img src="narada.jpg" alt="Restauracja 2" class="restaurant-image">
+                <span class="restaurant-name">Narada Sushi</span>
+            </div>
+            <div class="restaurant">
+                <img src="Tai.jpeg" alt="Restauracja 3" class="restaurant-image">
+                <span class="restaurant-name">Sushi Tai</span>
+            </div>
+            <div class="restaurant">
+                <img src="akira.png" alt="Restauracja 1" class="restaurant-image">
+                <span class="restaurant-name">Akira Sushi</span>
+            </div>
+            <div class="restaurant">
+                <img src="narada.jpg" alt="Restauracja 2" class="restaurant-image">
+                <span class="restaurant-name">Narada Sushi</span>
+            </div>
+            <div class="restaurant">
+                <img src="Tai.jpeg" alt="Restauracja 3" class="restaurant-image">
+                <span class="restaurant-name">Sushi Tai</span>
+            </div>
+            <!-- Dodaj więcej restauracji według potrzeb -->
+        </div>
+        
+    </main>
+
+    
+</body>
+</html>

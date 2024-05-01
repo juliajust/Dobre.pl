@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    height: 70px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin-left: 11px;
+    padding-top: 10px;/*tu przesuwasz logo
+}
+
+.navbar-brand {
+    padding-bottom: 5px; /* Przesuń logo w lewo o 20 pikseli */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Kolor ikony przycisku hamburgera */
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end; /* Wycentrowanie elementów na końcu paska nawigacyjnego */
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.categories a {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.categories a:hover {
+    transform: scale(1.05);
+}
+
+.category-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+/* Dodajemy style dla formularza */
+.search-container {
+    margin: 50px auto; /* Wyśrodkowanie formularza na stronie */
+    width: 50%; /* Szerokość formularza */
+    width: 825px;
+    align-items: center;
+    margin-right: 77px;
+}
+
+/* Stylowanie inputu */
+.search-container input[type=text] {
+    width: 100%; /* Szerokość inputu */
+    padding: 10px; /* Wewnętrzne wypełnienie */
+    border-radius: 20px; /* Zaokrąglenie krawędzi */
+    outline: none;
+   /* Usunięcie konturu */
+}
+.search-container form {
+    display: flex;
+    flex-grow: 1;
+}
+
+.search-container input {
+    flex-grow: 1;
+}
+.btn-search {
+    margin-left: 10px; /* Odstęp między inputem a przyciskiem */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /*tutaj zmieniasz wyglad przycisku i na dole*/
+    
+}
+
+/* Stylowanie przycisku */
+.search-container button {
+    padding: 10px 20px; /* Wewnętrzne wypełnienie */
+    background-color: #e55e18; /* Kolor tła przycisku */
+    color: white; /* Kolor tekstu */
+    border: none; /* Usunięcie obramowania */
+    border-radius: 20px; /* Zaokrąglenie krawędzi */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    transition: background-color 0.3s; /* Płynna zmiana koloru tła */
+    font-weight: bold;
+}
+
+/* Stylowanie przycisku po najechaniu */
+.search-container button:hover {
+    background-color: #d65311; /* Zmiana koloru tła przycisku po najechaniu myszką */
+    font-weight: bold;
+}
+/* Stylowanie sort-options */
+/* Stylowanie sort-options */
+.sort-options {
+    display: flex;
+    align-items: cover; /* Wyśrodkowanie w pionie */
+    margin-left: auto; /* Przesunięcie na prawo */
+    margin-right: 12px; /* Odstęp między opcjami sortowania a przyciskiem */
+}
+.sort-text {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.sort-options span {
+    padding-left: 20px;/* Odstęp między napisem a rozwijaną listą */
+}
+
+.sort-options select {
+    padding: 8px; /* Wewnętrzne wypełnienie */
+    border-radius: 10px; /* Zaokrąglenie krawędzi */
+    outline: none; /* Usunięcie konturu */
+    margin-left: 8px; 
+}
+
+/* Stylowanie opcji sortowania */
+.sort-options select option {
+    padding: 8px; /* Wewnętrzne wypełnienie */
+}
+/* Nowe style dla filters */
+.filters {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 89px;
+    padding-bottom: 30px;
+}
+
+.filter-option {
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #464545;
+}
+
+.filter-option label {
+    margin-right: 5px;
+}
+.star-rating {
+    font-size: 30px;
+}
+
+.star {
+    cursor: pointer;
+    color: #ccc; /* Kolor domyślny gwiazdki */
+}
+
+.star:hover,
+.star.selected {
+    color: #ffd700; /* Kolor żółty po najechaniu lub po wybraniu */
+}
+
+/* Stylowanie listy restauracji */
+.restaurant-list {
+    display: flex;
+    flex-direction: column; /* Restauracje będą ustawione jedna pod drugą */
+    align-items: flex-end; /* Restauracje będą wyrównane do prawej strony */
+}
+
+/* Stylowanie restauracji */
+/* Stylowanie restauracji */
+.restaurant {
+    width: calc(100% - 20px); /* Szerokość restauracji będzie równa szerokości strony minus marginesy */
+    max-width: 900px; /* Maksymalna szerokość restauracji */
+    height: 150px; /* Nowa wysokość restauracji */
+    border-radius: 10px; /* Zaokrąglenie krawędzi */
+    margin-bottom: 20px; /* Odstęp między restauracjami */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień */
+    overflow: hidden;
+}
+
+/* Stylowanie obrazka restauracji */
+.restaurant-image {
+    width: 30%; /* Szerokość obrazka */
+    height: 100%; /* Wysokość obrazka */
+    float: left; /* Wyrównanie do lewej strony */
+    border-top-left-radius: 10px; /* Zaokrąglenie lewego górnego rogu */
+    border-bottom-left-radius: 10px; /* Zaokrąglenie lewego dolnego rogu */
+}
+
+/* Stylowanie nazwy restauracji */
+.restaurant-name {
+    width: 60%; /* Szerokość nazwy */
+    height: 100%; /* Wysokość nazwy */
+    float: left; /* Wyrównanie do lewej strony */
+    padding: 10px;
+    background-color: #fff; /* Kolor tła */
+    color: #252525; /* Kolor tekstu */
+    font-weight: bold;
+    text-align: center;
+    border-top-right-radius: 10px; /* Zaokrąglenie prawego górnego rogu */
+    border-bottom-right-radius: 10px; /* Zaokrąglenie prawego dolnego rogu */
+}

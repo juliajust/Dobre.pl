@@ -1,0 +1,197 @@
+
+
+header {
+    background-image: url('akira_tlo.jpeg'); /* Ścieżka do obrazu */
+    background-size: cover; /* Dopasowanie obrazu do nagłówka */
+    background-position: center; /* Wyśrodkowanie obrazu */
+    background-repeat: no-repeat; /* Zapobieganie powtarzaniu obrazu */
+    height: 200px; /* Ustaw wysokość nagłówka według potrzeb */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: #ffffff !important; /*tutaj pasek na gorze*/
+    height: 70px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin-left: 11px;
+    padding-top: 10px;/*tu przesuwasz logo
+}
+
+.navbar-brand {
+    padding-bottom: 5px; /* Przesuń logo w lewo o 20 pikseli */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Kolor ikony przycisku hamburgera */
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end; /* Wycentrowanie elementów na końcu paska nawigacyjnego */
+}
+
+
+
+
+header {
+    background-image: url('akira_tlo.jpeg'); /* Ścieżka do obrazu tła */
+    background-size: cover; /* Dopasowanie obrazu do nagłówka */
+    background-position: center; /* Wyśrodkowanie obrazu */
+    background-repeat: no-repeat; /* Zapobieganie powtarzaniu obrazu */
+    height: 200px; /* Ustaw wysokość nagłówka według potrzeb */
+    position: relative; /* Ustawienie pozycji na relative, aby umieścić tekst */
+}
+
+h1 {
+    position: absolute; /* Ustawienie pozycji na absolute */
+    left: 60px; /* Odległość od lewej krawędzi */
+    top: 230px; /* Odległość od górnej krawędzi */
+    color: rgb(14, 14, 14); /* Kolor tekstu */
+    font-size: 24px; /* Rozmiar tekstu */
+    margin-left:  80px; /* Usunięcie marginesów */
+}
+
+
+.rating {
+    position: absolute; /* Ustawienie pozycji na absolute */
+    left: 60px; /* Odległość od lewej krawędzi */
+    top: 275px; /* Odległość od górnej krawędzi */
+    margin-left:  80px; /* Usunięcie marginesów */
+}
+
+.star {
+    color: #ffd700; /* Kolor gwiazdek */
+    font-size: 24px; /* Rozmiar gwiazdek */
+}
+.categories {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 130px;
+    margin-left: 10px;
+    padding-right: 5px;
+
+}
+
+.categories ul li:last-child {
+    margin-right: 0;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    display: block;
+    background-color: #e6e5e5;
+}
+
+.categories ul li a:hover {
+    background-color: #e55e18;
+    color: #fff;
+}
+
+.categories1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Wyrównanie do lewej krawędzi */
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.category {
+    margin-bottom: 20px; /* Odstęp między kategoriami */
+
+}
+
+.category h3 {
+    margin-bottom: 10px; /* Odstęp między tytułem a opcjami */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.option {
+    width: 800px; /* Szerokość prostokąta */
+    height: 200px; /* Wysokość prostokąta */
+    margin-bottom: 20px; /* Odstęp między prostokątami */
+    border-radius: 10px; /* Zaokrąglenie prostokąta */
+    background-color: #ffffff; /* Kolor prostokąta */
+    padding: 20px; /* Wewnętrzne marginesy */
+
+}
+
+.option h4 {
+    margin-top: 0; /* Usunięcie górnego marginesu dla nazwy dania */
+}
+
+.option p {
+    margin: 5px 0; /* Margines dla opisu i ceny */
+}
+.categories3 {
+    margin-top: 60px;
+    text-align: left;
+    margin-left: 130px;
+}
+
+.categories3 .category3 {
+    margin-bottom: 40px;
+}
+
+.categories3 .category3 h3 {
+    margin-bottom: 20px;
+    text-align: left;
+
+}
+
+.categories3 .option3 {
+    width: 1000px; /* Szerokość prostokąta */
+    height: 150px; /* Wysokość prostokąta */
+    margin-bottom: 10px; /* Odstęp między prostokątami */
+    border-radius: 10px; /* Zaokrąglenie prostokąta */
+    background-color: #ffffff; /* Kolor prostokąta */
+    padding: 10px; /* Wewnętrzne marginesy */
+    border: 1px solid #a7a7a7; /* Grubość i kolor obramowania */
+
+}
+
+.categories3 .option3 h4 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.categories3 .option3 h3 {
+    font-size: 17px;
+    margin-top: -10px;
+    margin-left: 15px;
+    font-weight: lighter;
+    
+}
+
+.categories3 .option3 p {
+    margin: 5px 0; /* Margines dla opisu i ceny */
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
